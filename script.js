@@ -1,31 +1,39 @@
-// Menú hamburguesa
 const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const navMenu = document.getElementById("nav-menu");
+const navLinks = document.querySelectorAll(".nav-menu a");
+const btns = document.querySelectorAll(".btn");
 
+// Abrir / cerrar menú
 menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });
 
-// Scroll suave al hacer clic en los enlaces
-const links = document.querySelectorAll('.nav-links a, .btn');
+// Función para scroll suave hacia sección
+function smoothScroll(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  if (!href.startsWith("#")) return;
+  const targetId = href.substring(1);
+  const targetSection = document.getElementById(targetId);
+  if (!targetSection) return;
 
-links.forEach(link => {
-  link.addEventListener("click", (e) => {
-    if (link.getAttribute("href").startsWith("#")) {
-      e.preventDefault();
-      const targetId = link.getAttribute("href").substring(1);
-      const targetElement = document.getElementById(targetId);
+  const headerHeight = document.querySelector("header").offsetHeight;
+  const targetPos = targetSection.offsetTop - headerHeight;
 
-      if (targetElement) {
-        const headerHeight = document.querySelector("header").offsetHeight;
-        window.scrollTo({
-          top: targetElement.offsetTop - headerHeight,
-          behavior: "smooth"
-        });
-      }
-
-      // Cierra el menú después de hacer clic (en móvil)
-      navLinks.classList.remove("active");
-    }
+  window.scrollTo({
+    top: targetPos,
+    behavior: "smooth"
   });
+
+  // cerrar menú en móvil luego de clic
+  navMenu.classList.remove("active");
+}
+
+// Aplicar scroll suave a los enlaces del menú
+navLinks.forEach(link => {
+  link.addEventListener("click", smoothScroll);
+});
+// Aplicar scroll suave al botón “Ver mis proyectos”
+btns.forEach(btn => {
+  btn.addEventListener("click", smoothScroll);
 });
