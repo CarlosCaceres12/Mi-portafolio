@@ -5,50 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Carlos Cáceres</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Librería de iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h2 class="logo">Carlos Cáceres</h2>
+      <ul>
+        <li><a href="#about">Perfil</a></li>
+        <li><a href="#education">Formación</a></li>
+        <li><a href="#skills">Competencias</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <div class="foto-container">
-        <img src="perfil.jpg" alt="Foto de perfil" class="perfil">
-      </div>
-      <h1 class="fade-in">Carlos Cáceres</h1>
-      <h2 class="subtitulo fade-in">Software Developer | Programador</h2>
+      <img src="perfil.jpg" alt="Foto de perfil" class="profile-img">
+      <h1>Hola, soy <span>Carlos Cáceres</span></h1>
+      <h3>Software Developer</h3>
+      <a href="#projects" class="btn">Ver mis proyectos</a>
+    </div>
+  </section>
 
-      <div class="redes fade-in">
-        <a href="mailto:carlosandres0913@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com/CarlosCaceres12" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
+  <!-- Perfil -->
+  <section id="about">
+    <h2>Perfil</h2>
+    <p>
+      Soy un apasionado por la tecnología y el desarrollo de software. Me gusta aprender nuevas herramientas
+      y trabajar en proyectos que me permitan crecer como programador.
+    </p>
+  </section>
 
-      <a href="#projects" class="btn fade-in">Ver mis proyectos</a>
+  <!-- Formación -->
+  <section id="education">
+    <h2>Formación</h2>
+    <ul>
+      <li><strong>Técnico en Programación Avanzada</strong> - Campuslands</li>
+      <li><strong>Bachiller Académico</strong></li>
+    </ul>
+  </section>
+
+  <!-- Competencias -->
+  <section id="skills">
+    <h2>Competencias</h2>
+    <div class="skills-container">
+      <span class="skill">Liderazgo</span>
+      <span class="skill">Creatividad</span>
+      <span class="skill">Empatía</span>
+      <span class="skill">Disciplina</span>
+      <span class="skill">Paciencia</span>
+      <span class="skill">Proactividad</span>
+      <span class="skill">Comunicación</span>
+      <span class="skill">Adaptabilidad</span>
     </div>
   </section>
 
   <!-- Proyectos -->
-  <section id="projects" class="projects">
-    <h2>Mis Proyectos</h2>
+  <section id="projects">
+    <h2>Proyectos</h2>
     <div class="projects-grid">
       <div class="card">
-        <h3>Proyecto Acme Bank</h3>
-        <p>Aplicación en JavaScript para simular un sistema bancario.</p>
-        <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver proyecto</a>
+        <h3>Banco Acme</h3>
+        <p>Aplicación web para la gestión de cuentas bancarias.</p>
+        <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver en GitHub</a>
       </div>
       <div class="card">
-        <h3>Happy Feett</h3>
-        <p>Proyecto web con diseño interactivo y dinámico.</p>
-        <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver proyecto</a>
+        <h3>HappyFeet</h3>
+        <p>Sistema veterinario con gestión de clientes y mascotas.</p>
+        <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver en GitHub</a>
       </div>
       <div class="card">
         <h3>Diario de Viaje</h3>
-        <p>Aplicación para registrar experiencias de viaje.</p>
-        <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver proyecto</a>
+        <p>Aplicación web para registrar experiencias de viajes.</p>
+        <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver en GitHub</a>
       </div>
     </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a:</p>
+    <p><strong>carlosandres0913@gmail.com</strong></p>
   </section>
 
   <!-- Footer -->
@@ -56,5 +100,6 @@
     <p>© 2025 Carlos Cáceres - Portafolio</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
