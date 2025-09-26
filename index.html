@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portafolio - Carlos Cáceres</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Andrés Cáceres - Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <a href="#about">Sobre mí</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#skills">Habilidades</a>
-      <a href="#contact">Contacto</a>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h2 class="logo">CACERES</h2>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
     </nav>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Carlos Andrés Cáceres</h1>
-        <p>Desarrollador Junior</p>
-      </div>
-      <div class="hero-img">
-        <img src="img/perfil.jpg" alt="Foto de perfil" />
-      </div>
-    </div>
   </header>
 
-  <main>
-    <section id="about" class="section">
-      <h2>Sobre mí</h2>
-      <p>Me gusta la tecnología y el desarrollo de software. Tengo conocimientos en varios lenguajes de programación y siempre busco mejorar mis habilidades. Quiero encontrar oportunidades donde pueda aplicar lo que sé, asumir nuevos retos y seguir creciendo como desarrollador.</p>
-    </section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span>Carlos Andrés Cáceres</span></h1>
+      <h3>Desarrollador Junior</h3>
+      <a href="#projects" class="btn">Ver mis proyectos</a>
+    </div>
+  </section>
 
-    <section id="projects" class="section">
-      <h2>Proyectos</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>AcmeBank</h3>
-          <p>Aplicación web para autogestión de cuentas bancarias: retiros, pagos, extractos, etc.</p>
-          <a href="https://github.com/CarlosCaceres12/AcmeBank" target="_blank">Ver más →</a>
-        </div>
-        <div class="project-card">
-          <h3>HappyFeet</h3>
-          <p>Sistema de gestión para clínica veterinaria, con información de dueños y mascotas.</p>
-          <a href="https://github.com/CarlosCaceres12/HappyFeet" target="_blank">Ver más →</a>
-        </div>
-        <div class="project-card">
-          <h3>Diario de Viaje</h3>
-          <p>App para registrar y compartir experiencias de viaje con control de versiones.</p>
-          <a href="https://github.com/CarlosCaceres12/DiarioViaje" target="_blank">Ver más →</a>
-        </div>
+  <!-- Sobre mí -->
+  <section id="about" class="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Me gusta la tecnología y el desarrollo de software. Tengo conocimientos en varios lenguajes
+      de programación y siempre busco mejorar mis habilidades. Quiero encontrar oportunidades donde
+      pueda aplicar lo que sé, asumir nuevos retos y seguir creciendo como desarrollador.
+    </p>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="projects">
+    <h2>Proyectos</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>AcmeBank</h3>
+        <p>Aplicación web para autogestión de cuentas bancarias: retiros, pagos, extractos, etc.</p>
+        <a href="https://github.com/CarlosCaceres12" target="_blank">Ver más</a>
       </div>
-    </section>
+      <div class="card">
+        <h3>HappyFeet</h3>
+        <p>Sistema de gestión para clínica veterinaria, con información de dueños y mascotas.</p>
+        <a href="https://github.com/CarlosCaceres12" target="_blank">Ver más</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="skills" class="section">
-      <h2>Habilidades & Competencias</h2>
-      <ul class="skills-list">
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>HTML & CSS</li>
-        <li>Git</li>
-        <li>MySQL</li>
-        <li>Scrum / Agile</li>
-        <li>Backend & Bases de datos</li>
-      </ul>
-    </section>
+  <!-- Habilidades -->
+  <section id="skills" class="skills">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
 
-    <section id="contact" class="section">
-      <h2>Contacto</h2>
-      <ul class="contact-list">
-        <li>LinkedIn: <a href="https://linkedin.com/in/carlos-caceres-aa3285264" target="_blank">linkedin.com/in/carlos-caceres-aa3285264</a></li>
-        <li>GitHub: <a href="https://github.com/CarlosCaceres12" target="_blank">github.com/CarlosCaceres12</a></li>
-        <li>Email: carlosandres0913@gmail.com</li>
-      </ul>
-    </section>
-  </main>
+  <!-- Contacto -->
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme en:</p>
+    <div class="contact-links">
+      <a href="mailto:carloscaceres12@gmail.com">📧 Email</a>
+      <a href="https://github.com/CarlosCaceres12" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/carloscaceres12" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>© 2025 Carlos Cáceres</p>
+  <footer>
+    <p>© 2025 Carlos Andrés Cáceres</p>
   </footer>
 </body>
 </html>
