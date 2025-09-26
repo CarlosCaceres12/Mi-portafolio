@@ -3,55 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos Cáceres | Portafolio</title>
+  <title>Portafolio - Carlos Cáceres</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Iconos de FontAwesome -->
+  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <h1>Carlos <span>Cáceres</span></h1>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="perfil.jpg" alt="Foto de perfil" class="perfil">
+      <h1>Carlos Cáceres</h1>
+      <p>Software Developer | Programador Junior</p>
+      <div class="redes">
+        <a href="mailto:carlosandres0913@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/CarlosCaceres12" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
     </div>
   </header>
 
-  <!-- SECCIÓN HERO -->
-  <section class="hero">
-    <div class="contenido-hero">
-      <img src="perfil.jpg" alt="Carlos Cáceres" class="perfil-img">
-      <h2>Hola, soy <span>Carlos Cáceres</span></h2>
-      <p class="subtitulo">Software Developer</p>
-      <a href="#proyectos" class="btn"><i class="fa-solid fa-code"></i> Ver mis proyectos</a>
-    </div>
+  <!-- SOBRE MÍ -->
+  <section class="sobre-mi">
+    <h2><i class="fa-solid fa-user"></i> Sobre mí</h2>
+    <p>
+      Soy <strong>programador junior</strong> apasionado por la tecnología y el desarrollo de software.
+      Tengo conocimientos en <strong>HTML, CSS, JavaScript, Java, MySQL</strong> y control de versiones con <strong>Git & GitHub</strong>.  
+      Me gusta aprender nuevas herramientas y trabajar en proyectos que me reten y me permitan crecer como desarrollador.
+    </p>
   </section>
 
-  <!-- SECCIÓN PROYECTOS -->
-  <section id="proyectos" class="proyectos">
-    <h2><i class="fa-solid fa-laptop-code"></i> Mis Proyectos</h2>
-    <div class="proyectos-grid">
-      <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank" class="card">
-        <i class="fa-solid fa-building-columns"></i>
-        <h3>Proyecto Acmebank</h3>
-      </a>
-      <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank" class="card">
-        <i class="fa-solid fa-dog"></i>
-        <h3>HappyFeet</h3>
-      </a>
-      <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank" class="card">
-        <i class="fa-solid fa-plane"></i>
+  <!-- PROYECTOS -->
+  <section class="proyectos">
+    <h2><i class="fa-solid fa-code"></i> Mis Proyectos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Proyecto Acme Bank</h3>
+        <p>Aplicación en JavaScript para simular un sistema bancario.</p>
+        <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver proyecto</a>
+      </div>
+      <div class="card">
+        <h3>Happy Feett</h3>
+        <p>Proyecto web con diseño interactivo y dinámico.</p>
+        <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver proyecto</a>
+      </div>
+      <div class="card">
         <h3>Diario de Viaje</h3>
-      </a>
+        <p>Aplicación para registrar experiencias de viaje.</p>
+        <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver proyecto</a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 Carlos Cáceres | Portafolio</p>
-    <div class="redes">
-      <a href="https://github.com/CarlosCaceres12" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/carlos-caceres" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
+    <p>© 2025 Carlos Cáceres - Todos los derechos reservados</p>
   </footer>
+
 </body>
 </html>
