@@ -6,6 +6,7 @@
   <title>Portafolio - Carlos Cáceres</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -16,8 +17,10 @@
       <ul>
         <li><a href="#about">Perfil</a></li>
         <li><a href="#education">Formación</a></li>
-        <li><a href="#skills">Competencias</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#languages">Idiomas</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
@@ -28,38 +31,67 @@
     <div class="hero-content">
       <img src="perfil.jpg" alt="Foto de perfil" class="profile-img">
       <h1>Hola, soy <span>Carlos Cáceres</span></h1>
-      <h3>Software Developer</h3>
+      <h3><span id="typed-text"></span><span class="cursor">|</span></h3>
       <a href="#projects" class="btn">Ver mis proyectos</a>
     </div>
   </section>
 
   <!-- Perfil -->
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>Perfil</h2>
     <p>
-      Soy un apasionado por la tecnología y el desarrollo de software. Me gusta aprender nuevas herramientas
-      y trabajar en proyectos que me permitan crecer como programador.
+      Soy un apasionado por la tecnología y el desarrollo de software, con gran interés en aprender nuevas herramientas
+      y en participar en proyectos innovadores que me permitan crecer profesionalmente y aportar soluciones útiles.
     </p>
   </section>
 
   <!-- Formación -->
-  <section id="education">
+  <section id="education" class="fade-in">
     <h2>Formación</h2>
     <ul>
-      <li><strong>Técnico en Programación Avanzada</strong> - Campuslands</li>
-      <li><strong>Bachiller Académico</strong></li>
+      <li><i class="fa-solid fa-graduation-cap"></i> <strong>Técnico en Programación Avanzada</strong> - Campuslands (2025)</li>
+      <li><i class="fa-solid fa-graduation-cap"></i> <strong>Bachiller Académico</strong> - (2023)</li>
     </ul>
   </section>
 
-  <!-- Competencias -->
-  <section id="skills">
+  <!-- Experiencia -->
+  <section id="experience" class="fade-in">
+    <h2>Experiencia</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3><i class="fa-solid fa-briefcase"></i> Banco Acme</h3>
+        <p>Aplicación web para la gestión de cuentas bancarias con operaciones bancarias.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-briefcase"></i> HappyFeet</h3>
+        <p>Sistema veterinario con gestión de clientes y mascotas.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-briefcase"></i> Diario de Viaje</h3>
+        <p>Aplicación web para registrar experiencias de viajes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="fade-in">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-container">
+      <span class="skill"><i class="fa-brands fa-python"></i> Python</span>
+      <span class="skill"><i class="fa-brands fa-js"></i> JavaScript</span>
+      <span class="skill"><i class="fa-brands fa-html5"></i> HTML</span>
+      <span class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+      <span class="skill"><i class="fa-brands fa-git-alt"></i> Git</span>
+      <span class="skill"><i class="fa-solid fa-database"></i> MySQL</span>
+      <span class="skill"><i class="fa-brands fa-java"></i> Java</span>
+    </div>
+
     <h2>Competencias</h2>
     <div class="skills-container">
       <span class="skill">Liderazgo</span>
       <span class="skill">Creatividad</span>
       <span class="skill">Empatía</span>
       <span class="skill">Disciplina</span>
-      <span class="skill">Paciencia</span>
       <span class="skill">Proactividad</span>
       <span class="skill">Comunicación</span>
       <span class="skill">Adaptabilidad</span>
@@ -67,37 +99,51 @@
   </section>
 
   <!-- Proyectos -->
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>Proyectos</h2>
     <div class="projects-grid">
       <div class="card">
         <h3>Banco Acme</h3>
         <p>Aplicación web para la gestión de cuentas bancarias.</p>
-        <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver en GitHub</a>
+        <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank"><i class="fa-brands fa-github"></i> Ver en GitHub</a>
       </div>
       <div class="card">
         <h3>HappyFeet</h3>
         <p>Sistema veterinario con gestión de clientes y mascotas.</p>
-        <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver en GitHub</a>
+        <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank"><i class="fa-brands fa-github"></i> Ver en GitHub</a>
       </div>
       <div class="card">
         <h3>Diario de Viaje</h3>
         <p>Aplicación web para registrar experiencias de viajes.</p>
-        <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver en GitHub</a>
+        <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank"><i class="fa-brands fa-github"></i> Ver en GitHub</a>
       </div>
     </div>
   </section>
 
+  <!-- Idiomas -->
+  <section id="languages" class="fade-in">
+    <h2>Idiomas</h2>
+    <p>Inglés: Nivel A2</p>
+    <div class="progress-bar">
+      <div class="progress" style="width:40%"></div>
+    </div>
+  </section>
+
   <!-- Contacto -->
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contacto</h2>
     <p>Puedes escribirme a:</p>
-    <p><strong>carlosandres0913@gmail.com</strong></p>
+    <p><strong><i class="fa-solid fa-envelope"></i> carlosandres0913@gmail.com</strong></p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Carlos Cáceres - Portafolio</p>
+    <div class="socials">
+      <a href="https://github.com/CarlosCaceres12" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:carlosandres0913@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
