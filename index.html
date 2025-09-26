@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio - Carlos Cáceres</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
     <nav>
-      <h2 class="logo">Carlos</h2>
-      <!-- Checkbox para el menú -->
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">☰</label>
-      <ul class="menu">
+      <div class="logo">Carlos<span class="check">✔</span></div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#skills">Habilidades</a></li>
@@ -25,66 +22,65 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="perfil.jpg" alt="Foto de perfil" class="profile-img">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div>
+      <img src="perfil.jpg" alt="Foto de perfil" class="profile-img" />
       <h1>Hola, soy <span>Carlos Cáceres</span></h1>
-      <h3>Desarrollador Junior</h3>
+      <p>Desarrollador Junior</p>
       <a href="#projects" class="btn">Ver mis proyectos</a>
     </div>
   </section>
 
-  <!-- Sobre mí -->
+  <!-- SOBRE MÍ -->
   <section id="about">
     <h2>Sobre mí</h2>
     <p>
-      Soy un apasionado por la tecnología y el desarrollo de software.
-      Me gusta aprender nuevas herramientas y trabajar en proyectos que me permitan crecer como programador.
+      Soy un desarrollador apasionado por crear aplicaciones web modernas y
+      optimizadas. Me gusta aprender nuevas tecnologías y aplicar buenas
+      prácticas de código.
     </p>
   </section>
 
-  <!-- Proyectos -->
+  <!-- PROYECTOS -->
   <section id="projects">
     <h2>Proyectos</h2>
     <div class="projects-grid">
       <div class="card">
-        <h3>Banco Acme</h3>
-        <p>Aplicación web para la gestión de cuentas bancarias.</p>
-        <a href="https://github.com/CarlosCaceres12/AcmeBank" target="_blank">Ver en GitHub</a>
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve de tu proyecto.</p>
+        <a href="#">Ver más</a>
       </div>
       <div class="card">
-        <h3>HappyFeet</h3>
-        <p>Sistema veterinario con gestión de clientes y mascotas.</p>
-        <a href="https://github.com/CarlosCaceres12/HappyFeet" target="_blank">Ver en GitHub</a>
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve de tu proyecto.</p>
+        <a href="#">Ver más</a>
       </div>
     </div>
   </section>
 
-  <!-- Habilidades -->
+  <!-- HABILIDADES -->
   <section id="skills">
     <h2>Habilidades</h2>
     <div class="skills-container">
       <span class="skill">HTML</span>
       <span class="skill">CSS</span>
       <span class="skill">JavaScript</span>
-      <span class="skill">Java</span>
-      <span class="skill">MySQL</span>
-      <span class="skill">Git & GitHub</span>
+      <span class="skill">Git</span>
     </div>
   </section>
 
-  <!-- Contacto -->
+  <!-- CONTACTO -->
   <section id="contact">
     <h2>Contacto</h2>
-    <p>Puedes escribirme a:</p>
-    <p><strong>carlosandres0913@gmail.com</strong></p>
+    <p>Puedes escribirme a <b>carlos@example.com</b></p>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Carlos Cáceres - Portafolio</p>
+    <p>© 2025 Carlos Cáceres - Todos los derechos reservados</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
