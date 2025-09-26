@@ -11,8 +11,8 @@
   <header>
     <nav class="navbar">
       <div class="container nav-container">
-        <a href="#" class="logo">Carlos Cáceres</a>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <a href="#hero" class="logo">Carlos Cáceres</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
@@ -25,38 +25,65 @@
 
   <section class="hero" id="hero">
     <div class="container hero-container">
-      <img src="perfil.jpg" alt="Foto de perfil" class="profile-img" />
+      <img src="perfil.jpg" alt="Foto de perfil - Carlos Cáceres" class="profile-img" />
       <h1>Hola, soy <span>Carlos Cáceres</span></h1>
-      <p>Desarrollador Junior</p>
+      <p class="subtitle">Software developer</p>
       <a href="#projects" class="btn">Ver mis proyectos</a>
     </div>
   </section>
 
   <section id="about" class="section">
     <div class="container">
-      <h2>Sobre mí</h2>
+      <h2>Perfil</h2>
       <p>
-        Soy un apasionado por la tecnología y el desarrollo de software. Me gusta
-        aprender nuevas herramientas y trabajar en proyectos que me permitan crecer
-        como programador.
+        Me apasiona la tecnología y el desarrollo de software. Tengo experiencia práctica construyendo aplicaciones web
+        y resolviendo problemas con código. Busco oportunidades para aprender, colaborar en equipos y crear software útil.
       </p>
+
+      <div class="two-col">
+        <div>
+          <h3>Formación</h3>
+          <p><strong>Técnico en Programación Avanzada</strong> – Campuslands, Floridablanca (Feb – Nov 2025)</p>
+          <p><strong>Bachiller</strong> – Luis Enrique Figueroa Rey (2023)</p>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <p>Email: <a href="mailto:carlosandres0913@gmail.com">carlosandres0913@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/CarlosCaceres12" target="_blank">CarlosCaceres12</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/carlos-caceres-a2a382564" target="_blank">Perfil</a></p>
+        </div>
+      </div>
+
+      <h3>Experiencia / Proyectos</h3>
+      <ul class="experience-list">
+        <li><strong>AcmeBank</strong> – App bancaria con registro, login y transacciones. <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver repo</a></li>
+        <li><strong>HappyFeett</strong> – Sistema de gestión veterinaria para clientes y mascotas. <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver repo</a></li>
+        <li><strong>DiarioDeViaje</strong> – Diario de viajes con entradas y fotos. <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver repo</a></li>
+      </ul>
     </div>
   </section>
 
   <section id="projects" class="section">
     <div class="container">
-      <h2>Proyectos</h2>
+      <h2>Proyectos destacados</h2>
       <div class="projects-grid">
-        <div class="card">
-          <h3>Banco Acme</h3>
-          <p>Aplicación web para la gestión de cuentas bancarias.</p>
-          <a href="https://github.com/CarlosCaceres12/AcmeBank" target="_blank">Ver en GitHub</a>
-        </div>
-        <div class="card">
-          <h3>HappyFeet</h3>
-          <p>Sistema veterinario con gestión de clientes y mascotas.</p>
-          <a href="https://github.com/CarlosCaceres12/HappyFeet" target="_blank">Ver en GitHub</a>
-        </div>
+        <article class="card">
+          <h3>AcmeBank</h3>
+          <p>Aplicación web con funcionalidades bancarias: registro, login, dashboard y transacciones.</p>
+          <a class="card-btn" href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver en GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>HappyFeett</h3>
+          <p>Sistema veterinario con gestión de clientes, mascotas y servicios.</p>
+          <a class="card-btn" href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver en GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>DiarioDeViaje</h3>
+          <p>Diario de viajes para registrar experiencias y fotos.</p>
+          <a class="card-btn" href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver en GitHub</a>
+        </article>
       </div>
     </div>
   </section>
@@ -72,13 +99,18 @@
         <span class="skill">MySQL</span>
         <span class="skill">Git & GitHub</span>
       </div>
-    </div>
-  </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Puedes escribirme a: <strong>carlosandres0913@gmail.com</strong></p>
+      <h3>Competencias</h3>
+      <ul class="competencies">
+        <li>Liderazgo</li>
+        <li>Creatividad</li>
+        <li>Empatía</li>
+        <li>Disciplina</li>
+        <li>Paciencia</li>
+        <li>Proactividad</li>
+        <li>Comunicación</li>
+        <li>Adaptabilidad</li>
+      </ul>
     </div>
   </section>
 
