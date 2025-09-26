@@ -1,15 +1,13 @@
 // Menú y scroll suave
-const menuBtn = document.getElementById('menu-toggle') || document.getElementById('menu-toggle');
-const navMenu = document.getElementById('nav-menu');
-const menuToggle = document.getElementById('menu-toggle') || document.querySelector('.menu-btn');
 const menuBtnAlt = document.querySelector('.menu-btn');
+const navMenu = document.getElementById('nav-menu');
+const menuToggle = document.getElementById('menu-toggle');
 
-// Compatibilidad: usar el botón visible
 if(menuBtnAlt){
   menuBtnAlt.addEventListener('click', ()=> navMenu.classList.toggle('active'));
 }
-if(menuBtn){
-  menuBtn.addEventListener('click', ()=> navMenu.classList.toggle('active'));
+if(menuToggle){
+  menuToggle.addEventListener('click', ()=> navMenu.classList.toggle('active'));
 }
 
 const links = document.querySelectorAll('a[href^="#"]');
