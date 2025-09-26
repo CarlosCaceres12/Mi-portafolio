@@ -1,20 +1,36 @@
-/* Fuente general */
-body {
+/* Variables globales */
+:root {
+  --color-bg: #f9f9f9;
+  --color-text: #333;
+  --color-dark: #111;
+  --color-accent: #ff5252;
+  --color-accent-hover: #ff3030;
+  --font-main: 'Poppins', sans-serif;
+}
+
+/* Reset */
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 /* Header */
 header {
-  background: #111;
+  background: var(--color-dark);
   padding: 15px 30px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 nav {
   display: flex;
@@ -22,9 +38,12 @@ nav {
   align-items: center;
 }
 nav .logo {
-  color: #ff5252;
-  font-weight: 600;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
+
+/* Menú */
 nav ul {
   list-style: none;
   display: flex;
@@ -34,21 +53,39 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
-nav ul li a:hover {
-  color: #ff5252;
+nav ul li a:hover,
+nav ul li a:focus {
+  color: var(--color-accent);
+}
+
+/* Menú hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none;
+}
+#menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero */
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, #111, #333);
+  background: linear-gradient(to right, var(--color-dark), #333);
   color: white;
-  padding-top: 60px;
+  padding-top: 100px; /* espacio por header */
 }
 .profile-img {
   width: 160px;
@@ -56,22 +93,35 @@ nav ul li a:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid #ff5252;
+  border: 3px solid var(--color-accent);
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
 }
 .hero h1 span {
-  color: #ff5252;
+  color: var(--color-accent);
 }
+.hero h3 {
+  font-weight: 400;
+}
+
+/* Botón */
 .btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: #ff5252;
+  background: var(--color-accent);
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s;
 }
-.btn:hover {
-  background: #ff3030;
+.btn:hover,
+.btn:focus {
+  background: var(--color-accent-hover);
+  transform: translateY(-2px);
+  outline: none;
 }
 
 /* Secciones */
@@ -83,7 +133,8 @@ section {
 h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: #111;
+  color: var(--color-dark);
+  font-size: 1.8rem;
 }
 
 /* Proyectos */
@@ -98,6 +149,11 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 .card h3 {
   margin-top: 0;
@@ -106,11 +162,12 @@ h2 {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
-  color: #ff5252;
+  color: var(--color-accent);
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 .card a:hover {
-  color: #ff3030;
+  color: var(--color-accent-hover);
 }
 
 /* Habilidades */
@@ -121,18 +178,59 @@ h2 {
   gap: 10px;
 }
 .skill {
-  background: #ff5252;
+  background: var(--color-accent);
   color: white;
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 14px;
+  transition: background 0.3s ease;
+}
+.skill:hover {
+  background: var(--color-accent-hover);
 }
 
 /* Footer */
 footer {
-  background: #111;
+  background: var(--color-dark);
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: var(--color-dark);
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .hero h3 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
 }
