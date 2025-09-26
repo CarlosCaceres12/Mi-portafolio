@@ -24,8 +24,10 @@ body {
   margin: 0.5rem 0;
   font-size: 2.5rem;
 }
-.hero p {
+.hero .titulo {
   color: #ddd;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 .redes a {
   color: #fff;
@@ -37,8 +39,8 @@ body {
   color: #ff4d4d;
 }
 
-/* SOBRE MÍ */
-.sobre-mi {
+/* PERFIL PROFESIONAL */
+.perfil {
   background: #1e1e1e;
   padding: 3rem 1rem;
   margin: 2rem auto;
@@ -46,16 +48,16 @@ body {
   max-width: 800px;
   text-align: center;
 }
-.sobre-mi h2 {
+.perfil h2 {
   color: #ff4d4d;
   margin-bottom: 1rem;
 }
-.sobre-mi p {
+.perfil p {
   font-size: 1rem;
   color: #ddd;
   line-height: 1.8;
 }
-.sobre-mi i {
+.perfil i {
   margin-right: 8px;
   color: #ff4d4d;
 }
