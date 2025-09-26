@@ -1,118 +1,60 @@
-/* ESTILO GENERAL */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #121212;
-  color: #fff;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Carlos Cáceres</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Librería de iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #ff4d4d, #1e1e1e);
-  padding: 4rem 1rem;
-  text-align: center;
-}
-.hero .perfil {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin-bottom: 1rem;
-}
-.hero h1 {
-  margin: 0.5rem 0;
-  font-size: 2.5rem;
-}
-.hero .titulo {
-  color: #ddd;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-.redes a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.3s;
-}
-.redes a:hover {
-  color: #ff4d4d;
-}
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="foto-container">
+        <img src="perfil.jpg" alt="Foto de perfil" class="perfil">
+      </div>
+      <h1 class="fade-in">Carlos Cáceres</h1>
+      <h2 class="subtitulo fade-in">Software Developer | Programador</h2>
 
-/* PERFIL PROFESIONAL */
-.perfil {
-  background: #1e1e1e;
-  padding: 3rem 1rem;
-  margin: 2rem auto;
-  border-radius: 10px;
-  max-width: 800px;
-  text-align: center;
-}
-.perfil h2 {
-  color: #ff4d4d;
-  margin-bottom: 1rem;
-}
-.perfil p {
-  font-size: 1rem;
-  color: #ddd;
-  line-height: 1.8;
-}
-.perfil i {
-  margin-right: 8px;
-  color: #ff4d4d;
-}
+      <div class="redes fade-in">
+        <a href="mailto:carlosandres0913@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/CarlosCaceres12" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
 
-/* PROYECTOS */
-.proyectos {
-  padding: 3rem 1rem;
-  text-align: center;
-}
-.proyectos h2 {
-  color: #ff4d4d;
-  margin-bottom: 2rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-.card {
-  background: #1e1e1e;
-  padding: 1.5rem;
-  border-radius: 10px;
-  transition: transform 0.3s, background 0.3s;
-}
-.card:hover {
-  transform: translateY(-10px);
-  background: #2a2a2a;
-}
-.card h3 {
-  margin-top: 0;
-  color: #fff;
-}
-.card p {
-  color: #bbb;
-}
-.card a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #ff4d4d;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-.card a:hover {
-  background: #e63939;
-}
+      <a href="#projects" class="btn fade-in">Ver mis proyectos</a>
+    </div>
+  </section>
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1e1e1e;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #aaa;
-}
+  <!-- Proyectos -->
+  <section id="projects" class="projects">
+    <h2>Mis Proyectos</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Proyecto Acme Bank</h3>
+        <p>Aplicación en JavaScript para simular un sistema bancario.</p>
+        <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver proyecto</a>
+      </div>
+      <div class="card">
+        <h3>Happy Feett</h3>
+        <p>Proyecto web con diseño interactivo y dinámico.</p>
+        <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver proyecto</a>
+      </div>
+      <div class="card">
+        <h3>Diario de Viaje</h3>
+        <p>Aplicación para registrar experiencias de viaje.</p>
+        <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Carlos Cáceres - Portafolio</p>
+  </footer>
+
+</body>
+</html>
