@@ -1,2 +1,2 @@
 # Portafolio Carlos Cáceres
-Este es mi portafolio web desarrollado en HTML, CSS y JavaScript.
+Portafolio web en HTML, CSS y JS.
