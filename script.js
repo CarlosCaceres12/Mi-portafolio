@@ -1,25 +1,28 @@
-// Toggle menú en móvil
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-const navLinks = document.querySelectorAll(".nav-menu a");
-const btns = document.querySelectorAll(".btn, .card-btn");
+// Menú y scroll suave
+const menuBtn = document.getElementById('menu-toggle') || document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const menuToggle = document.getElementById('menu-toggle') || document.querySelector('.menu-btn');
+const menuBtnAlt = document.querySelector('.menu-btn');
 
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
-
-function smoothScrollHandler(e) {
-    e.preventDefault();
-    const href = this.getAttribute("href");
-    if (!href || !href.startsWith("#")) return;
-    const targetId = href.substring(1);
-    const target = document.getElementById(targetId);
-    if (!target) return;
-    const headerHeight = document.querySelector("header").offsetHeight || 0;
-    const targetPos = target.offsetTop - headerHeight - 8;
-    window.scrollTo({ top: targetPos, behavior: "smooth" });
-    navMenu.classList.remove("active");
+// Compatibilidad: usar el botón visible
+if(menuBtnAlt){
+  menuBtnAlt.addEventListener('click', ()=> navMenu.classList.toggle('active'));
+}
+if(menuBtn){
+  menuBtn.addEventListener('click', ()=> navMenu.classList.toggle('active'));
 }
 
-navLinks.forEach(link => link.addEventListener("click", smoothScrollHandler));
-btns.forEach(b => b.addEventListener("click", smoothScrollHandler));
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(a=>{
+  a.addEventListener('click', function(e){
+    const href = this.getAttribute('href');
+    if(!href || !href.startsWith('#')) return;
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if(!target) return;
+    const headerH = document.querySelector('header').offsetHeight || 0;
+    const topPos = target.offsetTop - headerH - 8;
+    window.scrollTo({top: topPos, behavior:'smooth'});
+    if(navMenu) navMenu.classList.remove('active');
+  });
+});

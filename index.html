@@ -1,122 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio – Carlos Cáceres</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio — Carlos Cáceres</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container nav-container">
-        <a href="#hero" class="logo">Carlos Cáceres</a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
-        <ul class="nav-menu" id="nav-menu">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">Carlos Cáceres</a>
+      <button id="menu-toggle" class="menu-btn" aria-label="Abrir menú">☰</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Navegación principal">
+        <ul>
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero" id="hero">
-    <div class="container hero-container">
-      <img src="perfil.jpg" alt="Foto de perfil - Carlos Cáceres" class="profile-img" />
-      <h1>Hola, soy <span>Carlos Cáceres</span></h1>
-      <p class="subtitle">Software developer</p>
-      <a href="#projects" class="btn">Ver mis proyectos</a>
-    </div>
-  </section>
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <img src="perfil.jpg" alt="Foto de Carlos Cáceres" class="hero-photo">
+        <h1>Hola, soy <span class="accent">Carlos Cáceres</span></h1>
+        <p class="lead">Software developer</p>
+        <a class="btn" href="#projects">Ver mis proyectos</a>
+      </div>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>Perfil</h2>
-      <p>
-        Me apasiona la tecnología y el desarrollo de software. Tengo experiencia práctica construyendo aplicaciones web
-        y resolviendo problemas con código. Busco oportunidades para aprender, colaborar en equipos y crear software útil.
-      </p>
+    <section id="about" class="section about">
+      <div class="container two-col">
+        <div class="left">
+          <h2>Perfil</h2>
+          <p>Me gusta la tecnología y el desarrollo de software. Tengo conocimientos en varios lenguajes de programación y siempre busco mejorar mis habilidades. Quiero encontrar oportunidades donde pueda aplicar lo que sé, asumir nuevos retos y seguir creciendo como desarrollador.</p>
 
-      <div class="two-col">
-        <div>
           <h3>Formación</h3>
           <p><strong>Técnico en Programación Avanzada</strong> – Campuslands, Floridablanca (Feb – Nov 2025)</p>
           <p><strong>Bachiller</strong> – Luis Enrique Figueroa Rey (2023)</p>
+
+          <h3>Experiencia</h3>
+          <div class="exp">
+            <h4>Proyecto Acmebank</h4>
+            <p>Aplicación web para la autogestión de cuentas bancarias: registro, login, dashboard, transacciones, retiros y consultas.</p>
+            <p><a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver repositorio</a></p>
+          </div>
+
+          <div class="exp">
+            <h4>HappyFeett</h4>
+            <p>Desarrollo de un sistema de gestión para una clínica veterinaria, administrando información de dueños y mascotas.</p>
+            <p><a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver repositorio</a></p>
+          </div>
+
+          <div class="exp">
+            <h4>DiarioDeViaje</h4>
+            <p>Aplicación para registrar y compartir experiencias de viaje, con gestión de entradas y multimedia.</p>
+            <p><a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver repositorio</a></p>
+          </div>
         </div>
-        <div>
-          <h3>Contacto</h3>
-          <p>Email: <a href="mailto:carlosandres0913@gmail.com">carlosandres0913@gmail.com</a></p>
-          <p>GitHub: <a href="https://github.com/CarlosCaceres12" target="_blank">CarlosCaceres12</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/carlos-caceres-a2a382564" target="_blank">Perfil</a></p>
+
+        <aside class="right">
+          <div class="card info-card">
+            <h3>Habilidades</h3>
+            <ul class="info-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>HTML &amp; CSS</li>
+              <li>MySQL</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+
+          <div class="card info-card">
+            <h3>Competencias</h3>
+            <ul class="info-list">
+              <li>Liderazgo</li>
+              <li>Creatividad</li>
+              <li>Empatía</li>
+              <li>Disciplina</li>
+              <li>Paciencia</li>
+              <li>Proactividad</li>
+              <li>Comunicación</li>
+              <li>Adaptabilidad</li>
+            </ul>
+          </div>
+
+          <div class="card info-card">
+            <h3>Idiomas</h3>
+            <p>Inglés — A2</p>
+          </div>
+
+          <div class="card info-card">
+            <h3>Datos</h3>
+            <p>Email: <a href="mailto:carlosandres0913@gmail.com">carlosandres0913@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/CarlosCaceres12" target="_blank">CarlosCaceres12</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/carlos-caceres-a2a382564" target="_blank">Perfil</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Proyectos destacados</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb"></div>
+            <div class="project-body">
+              <h3>Proyecto Acmebank</h3>
+              <p>App web para gestión bancaria: usuarios, transacciones y consultas.</p>
+              <p><a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver en GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb"></div>
+            <div class="project-body">
+              <h3>HappyFeett</h3>
+              <p>Sistema de gestión para clínica veterinaria: clientes, mascotas y servicios.</p>
+              <p><a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver en GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb"></div>
+            <div class="project-body">
+              <h3>DiarioDeViaje</h3>
+              <p>Diario de viajes para registrar experiencias y fotos.</p>
+              <p><a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver en GitHub</a></p>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <h3>Experiencia / Proyectos</h3>
-      <ul class="experience-list">
-        <li><strong>AcmeBank</strong> – App bancaria con registro, login y transacciones. <a href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver repo</a></li>
-        <li><strong>HappyFeett</strong> – Sistema de gestión veterinaria para clientes y mascotas. <a href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver repo</a></li>
-        <li><strong>DiarioDeViaje</strong> – Diario de viajes con entradas y fotos. <a href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver repo</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Proyectos destacados</h2>
-      <div class="projects-grid">
-        <article class="card">
-          <h3>AcmeBank</h3>
-          <p>Aplicación web con funcionalidades bancarias: registro, login, dashboard y transacciones.</p>
-          <a class="card-btn" href="https://github.com/CarlosCaceres12/ProyectoAcmebank_JavaScript_CaceresCarlos" target="_blank">Ver en GitHub</a>
-        </article>
-
-        <article class="card">
-          <h3>HappyFeett</h3>
-          <p>Sistema veterinario con gestión de clientes, mascotas y servicios.</p>
-          <a class="card-btn" href="https://github.com/CarlosCaceres12/HappyFeett" target="_blank">Ver en GitHub</a>
-        </article>
-
-        <article class="card">
-          <h3>DiarioDeViaje</h3>
-          <p>Diario de viajes para registrar experiencias y fotos.</p>
-          <a class="card-btn" href="https://github.com/CarlosCaceres12/DiarioDeViaje1" target="_blank">Ver en GitHub</a>
-        </article>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Habilidades técnicas</h2>
+        <div class="skills-container">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Java</span>
+          <span class="skill">MySQL</span>
+          <span class="skill">Git</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section id="skills" class="section">
+  <footer class="site-footer">
     <div class="container">
-      <h2>Habilidades</h2>
-      <div class="skills-container">
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">Java</span>
-        <span class="skill">MySQL</span>
-        <span class="skill">Git & GitHub</span>
-      </div>
-
-      <h3>Competencias</h3>
-      <ul class="competencies">
-        <li>Liderazgo</li>
-        <li>Creatividad</li>
-        <li>Empatía</li>
-        <li>Disciplina</li>
-        <li>Paciencia</li>
-        <li>Proactividad</li>
-        <li>Comunicación</li>
-        <li>Adaptabilidad</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 Carlos Cáceres – Portafolio</p>
+      <p>© 2025 Carlos Cáceres — Portafolio</p>
     </div>
   </footer>
 
